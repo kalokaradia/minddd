@@ -21,7 +21,7 @@ export default function RoomPage() {
 
     const ydoc = new Y.Doc();
     const provider = new WebsocketProvider(
-      "wss://minddd.vercel.app",
+      "wss://localhost:3000",
       roomId,
       ydoc,
     );
