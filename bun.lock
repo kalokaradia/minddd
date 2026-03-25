@@ -5,6 +5,7 @@
     "": {
       "name": "minddd",
       "dependencies": {
+        "@tldraw/sync": "^4.5.3",
         "next": "16.2.1",
         "react": "19.2.4",
         "react-dom": "19.2.4",
@@ -353,6 +354,10 @@
 
     "@tldraw/store": ["@tldraw/store@4.5.3", "", { "dependencies": { "@tldraw/state": "4.5.3", "@tldraw/utils": "4.5.3" }, "peerDependencies": { "react": "^18.2.0 || ^19.2.1" } }, "sha512-OvsiqPatq80oD0sp6a2xd4mernom3oCopzkgitT9sEf+8faP+53Zed33CE7Zv9iKaByt9VCaeYYTWVAGvEOfQA=="],
 
+    "@tldraw/sync": ["@tldraw/sync@4.5.3", "", { "dependencies": { "@tldraw/state": "4.5.3", "@tldraw/state-react": "4.5.3", "@tldraw/sync-core": "4.5.3", "@tldraw/utils": "4.5.3", "nanoevents": "^7.0.1", "tldraw": "4.5.3", "ws": "^8.18.0" }, "peerDependencies": { "react": "^18.2.0 || ^19.2.1", "react-dom": "^18.2.0 || ^19.2.1" } }, "sha512-5XG21hZPpmX1dABWOyEVzZu3Uua25soUyd8pCxgRqsktA6t2Z8LMBNuXtk70gmj+0B9oRQstLdW8bbwZbzbbcA=="],
+
+    "@tldraw/sync-core": ["@tldraw/sync-core@4.5.3", "", { "dependencies": { "@tldraw/state": "4.5.3", "@tldraw/store": "4.5.3", "@tldraw/tlschema": "4.5.3", "@tldraw/utils": "4.5.3", "nanoevents": "^7.0.1", "ws": "^8.18.0" }, "peerDependencies": { "react": "^18.2.0 || ^19.2.1", "react-dom": "^18.2.0 || ^19.2.1" } }, "sha512-sJHgSvwUjQNkjPMLQPt3unIertV2oRwWDEUBw3JcLnHbM50fKvXC7sRj3E5kwt4LJSAMp0FEJQdKj+LvDv3zVg=="],
+
     "@tldraw/tlschema": ["@tldraw/tlschema@4.5.3", "", { "dependencies": { "@tldraw/state": "4.5.3", "@tldraw/store": "4.5.3", "@tldraw/utils": "4.5.3", "@tldraw/validate": "4.5.3" }, "peerDependencies": { "react": "^18.2.0 || ^19.2.1", "react-dom": "^18.2.0 || ^19.2.1" } }, "sha512-AmZKa7zVM/jXg2O4PNG6Z3oPieRo2zBWTLnVQa1eoyKYUINMw9IusHJNb4FWF7EMc4E8MyRuN3DEDAyU2OOdAg=="],
 
     "@tldraw/utils": ["@tldraw/utils@4.5.3", "", { "dependencies": { "jittered-fractional-indexing": "^1.0.0", "lodash.isequal": "^4.5.0", "lodash.isequalwith": "^4.4.0", "lodash.throttle": "^4.1.1", "lodash.uniq": "^4.5.0" } }, "sha512-7HasnIWQoehZC0OeuPEW16D2R4dus508oTy/lvy+q0wzZAOhVSbYjkwNoToUsWlnn664Crty7DN4U2Ce4C4F2g=="],
@@ -467,6 +472,8 @@
 
     "mdurl": ["mdurl@2.0.0", "", {}, "sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w=="],
 
+    "nanoevents": ["nanoevents@7.0.1", "", {}, "sha512-o6lpKiCxLeijK4hgsqfR6CNToPyRU3keKyyI6uwuHRvpRTbZ0wXw51WRgyldVugZqoJfkGFrjrIenYH3bfEO3Q=="],
+
     "nanoid": ["nanoid@3.3.11", "", { "bin": { "nanoid": "bin/nanoid.cjs" } }, "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w=="],
 
     "next": ["next@16.2.1", "", { "dependencies": { "@next/env": "16.2.1", "@swc/helpers": "0.5.15", "baseline-browser-mapping": "^2.9.19", "caniuse-lite": "^1.0.30001579", "postcss": "8.4.31", "styled-jsx": "5.1.6" }, "optionalDependencies": { "@next/swc-darwin-arm64": "16.2.1", "@next/swc-darwin-x64": "16.2.1", "@next/swc-linux-arm64-gnu": "16.2.1", "@next/swc-linux-arm64-musl": "16.2.1", "@next/swc-linux-x64-gnu": "16.2.1", "@next/swc-linux-x64-musl": "16.2.1", "@next/swc-win32-arm64-msvc": "16.2.1", "@next/swc-win32-x64-msvc": "16.2.1", "sharp": "^0.34.5" }, "peerDependencies": { "@opentelemetry/api": "^1.1.0", "@playwright/test": "^1.51.1", "babel-plugin-react-compiler": "*", "react": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", "react-dom": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", "sass": "^1.3.0" }, "optionalPeers": ["@opentelemetry/api", "@playwright/test", "babel-plugin-react-compiler", "sass"], "bin": { "next": "dist/bin/next" } }, "sha512-VaChzNL7o9rbfdt60HUj8tev4m6d7iC1igAy157526+cJlXOQu5LzsBXNT+xaJnTP/k+utSX5vMv7m0G+zKH+Q=="],
@@ -564,6 +571,8 @@
     "use-sync-external-store": ["use-sync-external-store@1.6.0", "", { "peerDependencies": { "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0" } }, "sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w=="],
 
     "w3c-keyname": ["w3c-keyname@2.2.8", "", {}, "sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ=="],
+
+    "ws": ["ws@8.20.0", "", { "peerDependencies": { "bufferutil": "^4.0.1", "utf-8-validate": ">=5.0.2" }, "optionalPeers": ["bufferutil", "utf-8-validate"] }, "sha512-sAt8BhgNbzCtgGbt2OxmpuryO63ZoDk/sqaB/znQm94T4fCEsy/yV+7CdC1kJhOU9lboAEU7R3kquuycDoibVA=="],
 
     "@tailwindcss/oxide-wasm32-wasi/@emnapi/core": ["@emnapi/core@1.9.1", "", { "dependencies": { "@emnapi/wasi-threads": "1.2.0", "tslib": "^2.4.0" }, "bundled": true }, "sha512-mukuNALVsoix/w1BJwFzwXBN/dHeejQtuVzcDsfOEsdpCumXb/E9j8w11h5S54tT1xhifGfbbSm/ICrObRb3KA=="],
 
